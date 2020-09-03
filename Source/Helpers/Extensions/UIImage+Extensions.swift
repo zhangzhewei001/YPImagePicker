@@ -112,7 +112,7 @@ internal extension UIImage {
         return CGSize(width: cappedWidth, height: cappedHeight)
     }
     
-    func toCIImage() -> CIImage? {
+    public func toCIImage() -> CIImage? {
         return self.ciImage ?? CIImage(cgImage: self.cgImage!)
     }
 }

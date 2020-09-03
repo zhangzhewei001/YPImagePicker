@@ -13,7 +13,7 @@ public typealias FilterApplierType = ((_ image: CIImage) -> CIImage?)
 
 public struct YPFilter {
     var name = ""
-    var applier: FilterApplierType?
+    public var applier: FilterApplierType?
     
     public init(name: String, coreImageFilterName: String) {
         self.name = name
