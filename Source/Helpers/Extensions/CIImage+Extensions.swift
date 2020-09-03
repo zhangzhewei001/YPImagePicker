@@ -9,7 +9,7 @@
 import UIKit
 
 internal extension CIImage {
-    func toUIImage() -> UIImage {
+    public func toUIImage() -> UIImage {
         /*
 			If need to reduce the process time, than use next code.
 			But ot produce a bug with wrong filling in the simulator.
